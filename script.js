@@ -37,7 +37,7 @@ function goThroughFName(fNameValue, fname) {
 function goThroughLName(lNameValue, lname) {
 	lNameLetters = lNameValue.split('');
 
-	if (lNameLetters.length < 5 || fNameLetters.length > 15) {
+	if (lNameLetters.length < 5 || lNameLetters.length > 15) {
 		lname.classList.add('invalid');
 		lname.parentElement.classList.add('invalid');
 		errorMessages.push('Last name does not meet criteria.');
@@ -49,7 +49,7 @@ function goThroughLName(lNameValue, lname) {
 function goThroughPWord(pWordValue, pword) {
 	pWordCharacters = pWordValue.split('');
 
-	if (pWordCharacters.length < 5 || fNameLetters.length > 15) {
+	if (pWordCharacters.length < 5 || pWordCharacters.length > 15) {
 		pword.classList.add('invalid');
 		pword.parentElement.classList.add('invalid');
 		errorMessages.push('Password does not meet criteria.');
